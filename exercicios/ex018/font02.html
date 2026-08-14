@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Fonts</title>
+    <style>
+        @font-face {
+            font-family: 'Yes';
+            src: url('Bringbold Nineties Demo.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /*
+        Types of format
+        - opentype (otf)
+        -truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advance Typography)
+        - svg
+        */
+
+        body {
+            font-family: 'Yes',Arial, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Yes', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Title
+    </h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur tempora, voluptatibus vel labore quidem quos, deleniti excepturi odit commodi iusto, accusamus non. Adipisci repudiandae corrupti, accusamus dicta at molestias et.
+    </p>
+
+</body>
+</html>

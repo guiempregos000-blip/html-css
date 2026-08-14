@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(155, 241, 155);
+}
+
+header {
+    background-image: linear-gradient( to bottom, rgb(65, 182, 30), rgb(12, 124, 12), green);
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+}
+
+header > div {
+    text-align: left;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: rgba(128, 255, 0, 0.356);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#first {
+    background-color: white;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#first > h1 {
+    color: green;
+}
+
+#first > h2 {
+    color: green;
+}
+
+#second {
+    background-color: green;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+video {
+    height: auto;
+    aspect-ratio: 16 / 9; /* Ajuste para 9/16 se for um vídeo vertical */
+}
+
+h3 {
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+#third {
+    background-color: white;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.a2 {
+    color: green;
+}
+
+#inthird {
+    background-color: rgb(119, 230, 115);
+    border-radius: 5px;
+}
+
+#inthird > p {
+    padding: 5px;
+    margin: 5px;
+}
+
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}

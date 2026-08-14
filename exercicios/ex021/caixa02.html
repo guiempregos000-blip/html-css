@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: gray;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(90, 90, 90);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px black;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 20px 30px 40px;
+        }
+
+        main > #assuntos {
+            background-color: rgb(90, 90, 90);
+            padding: 3px;
+            margin: 5px;
+        }
+
+        #assuntos > a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            margin-right: 30px;
+        }
+
+        #assuntos > a:hover {
+            text-decoration: underline;
+        }
+
+       article {
+        background-color: lightgray;
+        padding: 5px;
+       }
+
+       article > aside {
+        background-color: rgb(163, 163, 163);
+        padding: 5px;
+       }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        #ball {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <a href="">Sports</a>
+            <a href="">Economy</a>
+            <a href="">Lifestyle and Love</a>
+        </section>
+        <section id="Noticias">
+            <article>
+                <h2>New's Brazil</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ipsa placeat dicta pariatur expedita, ipsum adipisci rerum, esse dignissimos beatae sit, deleniti voluptatum nulla suscipit quisquam ullam ex consequuntur ducimus!
+                </p>
+                <aside>
+                    Article wrote by Guilherme André dos Santos Pereira
+                </aside>
+            </article>
+            <article>
+                <h2>New's World</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ab, aliquid error consequatur officiis voluptatum accusantium reprehenderit laborum aperiam atque quo amet quia aspernatur dicta nam? Tempore, sit! Maiores, ducimus.
+                </p>
+                <aside>
+                    Article wrote by Guilherme André dos Santos Pereira
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Developed through curso em video
+        </p>
+    </footer>
+    <div id="ball"></div>
+</body>
+</html>

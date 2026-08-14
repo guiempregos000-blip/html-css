@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia on HTML 5</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+        #emoji {
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dinamic images!</h1>
+    <p>
+        Try open this site in various different devices or just increase or decrease the size on your PC
+    </p>
+    <p>
+        PICTURE'S Tag allow you to use multiple resources like three images/pic on the same tag picture.
+    </p>
+    <p>
+        ALL THE SOURCES MUST BE IN ORDER ok
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-M.png" type="image/png">
+        <img src="imagens/foto-G.png" alt="ohmygod">
+    </picture>
+
+    <h1>Playing a media</h1>
+    <p>
+        Let's learn hot to play a audio in HTML5
+    </p>
+    <audio controls autoplay>
+        <source src="midia/Wildfire - Jessie Villa.mp3" type="audio/mpeg">
+        <source src="midia/Wildfire - Jessie Villa.mp3" type="audio/ogg">
+        <source src="midia/Wildfire - Jessie Villa.wav" type="audio/wav">
+        <p>Unfortunately your browser can not play this audio type, <a href="midia/Wildfire - Jessie Villa.mp3">click here to download the file in MP3</a></p>
+    </audio>
+
+    <p id="emoji">
+        &#128512;
+    </p>
+</body>
+</html>

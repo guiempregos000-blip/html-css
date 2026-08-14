@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+div {
+            display: inline-block;
+            background-color: bisque;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div:hover {
+            background-color: aqua;
+        }
+
+        #d2:hover {
+            background-color: gold;
+        }
+
+        #d3:hover {
+            background-color: green;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+
+
+
+
+
