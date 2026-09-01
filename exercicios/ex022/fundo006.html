@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fundo fixo de tela</title>
     <style>
         body {
-            height: 100vh;
+
+            background: black url('images/wallpaper002.jpg') center center / cover no-repeat fixed;
+            /*height: 100vh;
             background-color: black;
             background-image: url('images/wallpaper002.jpg');
             background-position: center top;
-            background-repeat: repeat;
+            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+            
+            /*
+            SHORT-HAND - background
+         	way:	color > image > position > / > size > repeat > attachment
+            */
         }
 
         main {
@@ -27,7 +35,7 @@
 <body>
     <main>
         <h1>
-            teste de imagem de fundo
+            Teste de imagem de fundo
         </h1>
         <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum amet eaque beatae aut sit culpa quia? Delectus veritatis quo odio suscipit inventore ipsum laborum et impedit atque, officiis consectetur quasi.
