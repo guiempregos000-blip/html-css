@@ -14,6 +14,20 @@
             border-collapse: collapse;
         }
 
+        caption {
+            background-color: black;
+            color: white;
+            font-size: 1,5em;
+            font-weight: bold;
+            padding: 10px;
+
+            border: 1px solid black;
+        }
+
+        #populacao {
+            width: 50px;
+        }
+
         thead {
             background-color: gray;
             color: white;
@@ -27,6 +41,7 @@
         td.num {
             text-align: right;
         }
+
     </style>
 </head>
 <body>
@@ -36,6 +51,7 @@
     <!--
         Anatomia para TABELAS GRANDES
         Table
+            <caption> só texto, sem tr ,td...
             THEAD
                 TR,TD, TH
             TBODY
@@ -45,9 +61,10 @@
         TABLE
     -->
         <table>
+            <caption>Tabelas grandes</caption>
             <thead>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" id="populacao">População</th>
             </thead>
             <tbody>
                 <tr>
@@ -162,7 +179,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de habitantes</th>
+                    <th scope="row">Total de habitantes</th>
                     <td class="num"><strong>214 211 951</strong></td>
                 </tr>
             </tfoot>
