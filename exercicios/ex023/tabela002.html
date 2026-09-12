@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -33,12 +34,18 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
         tbody > tr:nth-child(even) {
             background-color: lightgray;
         }
 
         tbody > tr:nth-child(odd) {
-            background-color: rgb(255, 202, 210);
+            background-color: lightblue;
         }
 
         td , th {
