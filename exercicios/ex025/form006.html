@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        img#minhaImagem{
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
     <h1>Exemplo de formulario</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post">
         <p>
             <label for="icor">Cor: </label>
             <input type="color" name="Cor" id="icor" value="#00ff00">
@@ -21,6 +26,7 @@
         <p>
             <label for="iimage">imagem: </label>
             <input type="file" name="image" id="iimage">
+            <img id="minhaImagem" src="" alt="Pré-vizualização" width="100%">
         </p>
 
         <p>
@@ -28,5 +34,19 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+    <script>
+        const inputImagem = document.getElementById('iimage');
+const minhaImagem = document.getElementById('minhaImagem');
+
+inputImagem.addEventListener('change', function(evento) {
+  const arquivo = evento.target.files[0];
+  
+  if (arquivo) {
+    // Cria uma URL temporária para o arquivo selecionado
+    minhaImagem.src = URL.createObjectURL(arquivo);
+  }
+});
+    </script>
 </body>
 </html>
