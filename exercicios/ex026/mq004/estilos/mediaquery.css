@@ -2,6 +2,37 @@
 
 /* Todas as demais medias */
 
+/*Typical Device brakpoints
+pequenas telas: até 600 px
+celular : de 600px até 760px
+tablet: de 760px até 992px
+desktop : de 992px até 1200px
+grandes telas : acima de 1200px
+*/
+
 @media print {
+    
+}
+
+@media screen and (min-width: 760px) and (max-width: 992px) {
+    /*TABLET*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone { display: none;}
+    #tablet { display: block; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    /*DDESKTOP*/
+    
+}
+
+@media screen and (min-width: 1200px) {
+    /*GRANDES TELAS*/
     
 }
