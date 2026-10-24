@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*All the others sizes:tablet, desktop and large frames*/
+
+/*
+tablet : 600px a 768px
+leptops : 992px a 1200px
+tv : 1200+
+*/
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    div {
+        margin: 100px;
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    div {
+        margin: 100px;
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    div {
+        margin: 100px;
+        padding: 50px;
+    }
+}
