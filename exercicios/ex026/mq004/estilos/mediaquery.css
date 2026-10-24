@@ -11,7 +11,31 @@ grandes telas : acima de 1200px
 */
 
 @media print {
-    
+    body {
+        background-image: url(../imagens/back-print.jpg);/*desnecessario*/
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressãp foi feita atráves do portfolio guilherme pereira';
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    #phone { display: none;}
+    #tablet { display: none; }
+    #print { display: block; }
+    #pc { display: none; }
+    #tv { display: none; }
 }
 
 @media screen and (min-width: 760px) and (max-width: 992px) {
@@ -28,11 +52,31 @@ grandes telas : acima de 1200px
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    /*DDESKTOP*/
+    /*DESKTOP*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
     
+    #phone { display: none;}
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: block; }
+    #tv { display: none; }
 }
 
 @media screen and (min-width: 1200px) {
     /*GRANDES TELAS*/
-    
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #phone { display: none;}
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
 }
